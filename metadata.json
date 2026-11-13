@@ -1,0 +1,10 @@
+{
+  "name": "Remix: الدكتور يوسف - تحليل الروشتات",
+  "description": "تطبيق متطور مدعوم بالذكاء الاصطناعي لفك شفرة الروشتات الطبية المكتوبة بخط اليد وتحليل محتواها باللغة العربية.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

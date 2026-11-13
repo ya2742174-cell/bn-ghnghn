@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Amiri', Georgia, serif;
+    --font-sans: 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #070B0E;
+    color: #F1F5F2;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: #070B0E;
+    color: #F1F5F2;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print-surface {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: none !important;
+  }
+
+  .print-muted {
+    color: #475569 !important;
+  }
+
+  .print-accent {
+    color: #0f172a !important;
+  }
+}
